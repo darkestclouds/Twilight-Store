@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: torrserver
+id: twilight-torrserver
 category: networking
 name: TorrServer
 version: "MatriX.137"

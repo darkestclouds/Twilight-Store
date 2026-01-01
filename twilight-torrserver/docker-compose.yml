@@ -1,7 +1,7 @@
 services:
   server:
     image: ghcr.io/yourok/torrserver:latest
-    container_name: torrserver
+    container_name: twilight-torrserver
     environment:
       - TS_PORT=8090
       - TS_DONTKILL=1

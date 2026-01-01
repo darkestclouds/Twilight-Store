@@ -35,10 +35,6 @@ dependencies: []
 repo: https://github.com/YouROK/TorrServer
 support: https://github.com/YouROK/TorrServer/issues
 port: 8090
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Добавление:
 

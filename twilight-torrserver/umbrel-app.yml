@@ -56,8 +56,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 torOnly: false
-releaseNotes: >-
-  Этот релиз включает улучшения производительности, исправления ошибок и обновления зависимостей. Полные примечания к релизу доступны на https://github.com/YouROK/TorrServer/releases
 permissions:
   - STORAGE_DOWNLOADS
 submitter: Community

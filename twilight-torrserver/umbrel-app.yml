@@ -56,6 +56,6 @@ defaultPassword: ""
 torOnly: false
 permissions:
   - STORAGE_DOWNLOADS
-submitter: Community
+submitter: darkestclouds
 submission: https://github.com/YouROK/TorrServer
 icon: https://i.postimg.cc/XvydjscV/tsicon.png

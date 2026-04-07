@@ -2,7 +2,7 @@ manifestVersion: 1
 id: twilight-matterbridge
 name: Matterbridge
 tagline: Matter plugin manager for bridging devices into Matter ecosystems
-icon: https://matterbridge.io/assets/icon.png
+icon: https://i.postimg.cc/Gp1zWFXx/matterbridge.png
 category: Smart Home
 version: "3.7.2"
 port: 8283

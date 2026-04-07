@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: twilight-matterbridge
+name: Matterbridge
+tagline: Matter plugin manager for bridging devices into Matter ecosystems
+icon: https://matterbridge.io/assets/icon.png
+category: Smart Home
+version: "3.7.2"
+port: 8283
+description: >-
+  Matterbridge is a Matter plugin manager. It exposes bridged devices to Matter
+  ecosystems like Apple Home, Google Home, Alexa, Home Assistant, and others.
+
+developer: Luligu
+website: https://matterbridge.io
+submitter: darkestclouds
+submission: https://github.com/darkestclouds/Twilight-Store
+repo: https://github.com/Luligu/matterbridge
+support: https://github.com/Luligu/matterbridge/issues
+
+gallery: []
+releaseNotes: >-
+  Initial Umbrel package for Matterbridge 3.7.2.
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+
+torOnly: false

@@ -1,0 +1,9 @@
+services:
+  app:
+    image: luligu/matterbridge:3.7.2
+    network_mode: host
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/Matterbridge:/root/Matterbridge
+      - ${APP_DATA_DIR}/.matterbridge:/root/.matterbridge
+      - ${APP_DATA_DIR}/.mattercert:/root/.mattercert

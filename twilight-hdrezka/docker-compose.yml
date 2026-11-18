@@ -14,7 +14,7 @@ services:
 
   server:
     # Тег версии + digest мультиархитектурного манифеста (amd64 + arm64) — как собрать: docker/README.md
-    image: ghcr.io/darkestclouds/hdrezka-server:0.1.0@sha256:9ea0483cf6e3507bd7faa026e0de0856bb555d48e521edd8089b629580c49bf6
+    image: ghcr.io/darkestclouds/hdrezka-server:0.1.1@sha256:dafe5a74858cef98b346d6060c9b35f72abfb7cd21e030f2b3a053d38cbcbdab
     user: "1000:1000"
     init: true
     restart: on-failure

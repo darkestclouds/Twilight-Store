@@ -1,0 +1,27 @@
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<service>_1
+      APP_HOST: twilight-hdrezka_server_1
+      APP_PORT: 8765
+      # Без входа в Umbrel — только то, что открывают ТВ и приложения (они не умеют передавать куки Umbrel):
+      #   /hdrezka.js, /hdrezka.min.js — файл плагина Lampa (с вшитым API-токеном);
+      #   /api/*  — API плагина (закрыт API-токеном; /api/capabilities открыт для приложения Apple TV);
+      #   /lite/* — источник для приложения Apple TV;
+      #   /health — проверка живости.
+      # Страница настройки (/) и /admin/* остаются за входом в Umbrel.
+      PROXY_AUTH_WHITELIST: "/hdrezka.js,/hdrezka.min.js,/api/*,/lite/*,/health"
+
+  server:
+    # Тег версии + digest мультиархитектурного манифеста (amd64 + arm64) — как собрать: docker/README.md
+    image: ghcr.io/darkestclouds/hdrezka-server:0.1.0@sha256:9ea0483cf6e3507bd7faa026e0de0856bb555d48e521edd8089b629580c49bf6
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      # Запросы приходят через прокси umbrelOS с частного адреса Docker-сети
+      HDREZKA_ADMIN_LAN: "true"
+      # Страница настройки открывается по IP устройства и по его .local-имени
+      HDREZKA_ADMIN_HOSTS: ${DEVICE_DOMAIN_NAME}
